@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap');
+*{font-family: 'Cairo', sans-serif;}
+.flexContainer{
+    background-color: rgb(34, 45, 57);
+    width: 100vw;
+    height: 100%;
+}
+
+.logoContainer{
+    display: flex;
+    width: 14.5em;
+    height: 100%;
+    background-color: rgb(240, 209, 56);
+    align-items: center;
+    flex-direction:row ;
+    color: black;
+    font-size: 1.4em;
+    font-weight: 400;
+    gap: 1em;
+    float: left;
+}
+
+.logoContainer img{
+    width: 3em;
+    height: 2em;
+    margin-left: 2em;
+    cursor: pointer;
+}
+
+.buttonsContainer{
+    display: flex;
+    justify-self: end;
+    align-items: center;
+    width:42em;
+    height: 100%;
+    float: right;
+    gap: 1em;
+}
+
+.buttonsContainer button{
+    display: flex;
+    position: relative;
+    height: 3em;
+    font-size: .82em;
+    background: none;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.buttonsContainer button:hover{
+    color:rgb(240, 209, 56);
+}
+
+.buttonsContainer button:focus{
+    outline:none;
+}
