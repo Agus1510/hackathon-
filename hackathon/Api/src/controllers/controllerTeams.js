@@ -23,30 +23,6 @@ const getTeams = async (req, res, next) => {
   }
 };
 
-const getTeamGender = async (req, res) => {
-  try {
-    if (!req.params.gender.length) {
-      const team = await Team.find();
-      res.send({ info: "Teamo encontrado", team, success: true });
-    } else {
-      const team = await Team.find({
-        genero: { $regex: req.params.gender, $options: "i" },
-        edad: { $regex: req.params.age, $options: "i" },
-      });
-      if (!team.length) {
-        res
-          .status(404)
-          .send({ info: "No existe productos con ese genero", success: false });
-      } else {
-        res.send({ info: "Teamos encontrados", team, success: true });
-      }
-    }
-  } catch (err) {
-    res.send({ info: "Algo salio mal", err, success: false });
-    console.error(err);
-  }
-};
-
 const getTeamsByName = async (req, res) => {
   const $regex = req.params.name;
   try {

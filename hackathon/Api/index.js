@@ -13,7 +13,7 @@ const express = require("express");
 // config
 const app = express();
 const port = process.env.PORT || 3001;
-const db = process.env.MONGODB_URI || "mongodb://127.0.0.1:27017/render";
+const db = process.env.MONGODB_URI || "mongodb://127.0.0.1:27017/mundial";
 
 app.use(cors());
 app.use(errorHandler);
