@@ -1,4 +1,4 @@
-const { Schema, model } = require("mongoose");
+const { Schema, model, Types } = require("mongoose");
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 const crypto = require("crypto");
@@ -49,6 +49,10 @@ const userSchema = new Schema(
     },
     resetPasswordToken: String,
     resetPasswordExpire: Date,
+    choices:[{
+      type:Types.ObjectId,
+      ref:'Game',
+    }]
   },
   {
     timestamps: true,

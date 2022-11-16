@@ -6,16 +6,19 @@ const TeamSchema = new Schema(
       type: String,
       required: [true, "Name is required"],
     },
-    image: { String, required: [true, "Image is required"] },
-    wins: {
-      Number,
+    image:{
+      type:String,
+      required:true,
     },
-    loses: {
-      Number,
+    followers:{
+      type:Number,
+      required:true,
+      default:0,
     },
-    draws: {
-      Number,
-    },
+    group:{
+      type:String,
+      required:true,
+    }
   },
   {
     timestamps: true,

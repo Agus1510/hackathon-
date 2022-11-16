@@ -7,7 +7,7 @@ const {
   getTeamById,
   editTeam,
   deleteTeam,
-} = require("../../controllers/controllerRooms");
+} = require("../../controllers/controllerTeams");
 
 router.post("/", protect, createTeam);
 router.get("/:id", protect, getTeamById);
