@@ -28,7 +28,7 @@ function NavBar() {
   function parallel_height_js() {
     var element = document.getElementById("containerNav");
 
-    element.style.backgroundColor = "rgb(40, 40, 40)";
+    element.style.backgroundColor = "rgb(114,18,45)";
   }
   function parallel_height_js2() {
     var element = document.getElementById("containerNav");
@@ -89,7 +89,7 @@ function NavBar() {
     <div className={style.width}>
       <div className={style.containerNav} id="containerNav">
         <div className={style.logoContainer}>
-          <img src="catar.png" />
+          <img src="logoqatar.png" />
         </div>
         <div className={activePhone ? style.phoneMenuActive : style.phoneMenu}>
           <PhoneMenu data-dropdownPhone />
