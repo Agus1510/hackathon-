@@ -1,0 +1,69 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 90vh;
+}
+
+.flexContainer{
+ width: 90%;
+ min-height:70%;
+ border: 4px solid rgb(114,18,45);
+border-radius: .5em;
+color: black;
+}
+
+.titles{
+    display: flex;
+    height: 3em;
+    border-bottom: 4px solid rgb(114,18,45);
+}
+
+.matchs {
+    display: flex;
+    height: 4em;
+    border-bottom: 4px solid rgb(114,18,45);
+}
+
+.titles th:nth-child(n+2),.matchs td:nth-child(n+2){
+    display: flex;
+    width: 40%;
+    height: 100%;
+    font-size: 1.3em;
+    color: black;
+    justify-content: center;
+    align-items: center;
+}
+
+.titles th:nth-child(1), .matchs td:nth-child(1){
+    display: flex;
+    width: 20%;
+    height: 100%;
+    font-size: 1.3em;
+    color: black;
+    justify-content: center;
+    align-items: center;
+}
+.titles th:nth-child(-n+2), .matchs td:nth-child(-n+2){
+    border-right: 4px solid rgb(114,18,45) ;
+}
+
+.teams img:nth-child(1){
+    display: flex;
+    width: 2em;
+    height: 2em;
+    margin-right: 1em;
+}
+.teams img:nth-child(3){
+    display: flex;
+    width: 2em;
+    height: 2em;
+    margin-left: 1em;
+}
+
+.teams span{
+    width: 3em;
+}
+
+
