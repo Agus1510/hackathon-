@@ -89,7 +89,9 @@ function NavBar() {
     <div className={style.width}>
       <div className={style.containerNav} id="containerNav">
         <div className={style.logoContainer}>
-          <img src="logoqatar.png" />
+          <NavLink to={"/"}>
+            <img src="logoqatar.png" />
+          </NavLink>
         </div>
         <div className={activePhone ? style.phoneMenuActive : style.phoneMenu}>
           <PhoneMenu data-dropdownPhone />

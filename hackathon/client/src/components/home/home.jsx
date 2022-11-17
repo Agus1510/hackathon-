@@ -8,6 +8,7 @@ import {
   IoLogoInstagram,
   IoPhonePortraitOutline,
 } from "react-icons/io5";
+import Votes from "./votes/votes";
 function Home() {
   return (
     <div className={style.home}>
@@ -24,7 +25,7 @@ function Home() {
         </div>
         <div className={style.pages}>
           <div className={style.page}>
-            <img src="PRUEBA.png" />
+            <Votes />
           </div>
         </div>
       </div>
