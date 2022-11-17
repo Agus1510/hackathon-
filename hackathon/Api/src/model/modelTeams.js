@@ -23,6 +23,7 @@ const TeamSchema = new Schema(
     wins:Number,
     loses:Number,
     draws:Number,
+    totalgols:Number,
     group:{
       type:String,
       required:true,
