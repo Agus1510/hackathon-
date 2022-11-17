@@ -49,10 +49,16 @@ const userSchema = new Schema(
     },
     resetPasswordToken: String,
     resetPasswordExpire: Date,
-    choices:[{
-      type:Types.ObjectId,
-      ref:'Game',
-    }]
+    elections:[],
+    location:{
+      type:String,
+    },
+    favoriteSteam:{
+      type:String
+    },
+    ChampionTeam:{
+      type:String
+    }
   },
   {
     timestamps: true,

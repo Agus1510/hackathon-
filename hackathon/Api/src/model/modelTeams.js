@@ -6,6 +6,10 @@ const TeamSchema = new Schema(
       type: String,
       required: [true, "Name is required"],
     },
+    group:{
+      type:String,
+      required:true,
+    },
     image:{
       type:String,
       required:true,
@@ -15,6 +19,10 @@ const TeamSchema = new Schema(
       required:true,
       default:0,
     },
+    votes:Number,
+    wins:Number,
+    loses:Number,
+    draws:Number,
     group:{
       type:String,
       required:true,
