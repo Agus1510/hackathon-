@@ -129,7 +129,6 @@ module.exports = {
   createTeam,
   getTeamById,
   getTeams,
-  getTeamGender,
   getTeamCategory,
   getTeamsByName,
   editTeam,
