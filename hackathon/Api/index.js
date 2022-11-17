@@ -44,5 +44,3 @@ const connectDB = () => {
 };
 
 connectDB();
-
-//
